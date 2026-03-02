@@ -96,16 +96,6 @@ add → recurse → remove
 
 Without removing (backtracking), results will be incorrect.
 
-📚 Topics Covered
-
-Recursion
-
-Backtracking
-
-Power Set
-
-Combinatorics
-
 👨‍💻 Author
 
 Sanjeev Sharma

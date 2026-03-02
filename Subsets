@@ -1,0 +1,17 @@
+class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        Sets(new ArrayList<>(), nums , 0 , list);
+        return list ;
+    }
+    public void Sets(List<Integer> ans, int[] nums ,int idx ,  List<List<Integer>> list){
+        if(idx == nums.length){
+            list.add(new ArrayList<>(ans));
+            return;
+        }
+        ans.add(nums[idx]);
+        Sets(ans, nums , idx+1 , list);
+        ans.remove(ans.size() - 1);
+        Sets(ans , nums , idx+1 , list);
+    }
+}
